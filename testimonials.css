@@ -1,0 +1,144 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    max-width: 1440px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    max-width: 1220px;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.section {
+    padding: 25px;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    height: 35px;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.name-light {
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.name-dark{
+    color: rgb(37, 37, 37) ;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.status-light {
+    color:rgba(255, 255, 255, 0.5) ;
+    font-size: 13px;
+}
+
+.status-dark {
+    color:rgba(37, 37, 37, 0.5) ;
+    font-size: 13px;
+}
+
+.main-info-light  {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.main-info-dark  {
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.description-light {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.description-dark {
+    color: rgba(37, 37, 37, 0.5);
+    font-size: 13px;
+}
+
+.section-1 {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+
+
+.section-1 .top .profile-picture {
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5); 
+ }
+
+.section-1 svg {
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    z-index: -2;
+}
+
+
+
+.section-2 {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    grid-area: 1 / 3 / 2 / -2;
+}
+
+.section-3 {
+    background-color: white;
+    border-radius: 10px;
+    grid-area: 1 / -2 / -1 / -1;
+}
+
+.section-4 {
+    background-color: white;
+    border-radius: 10px;
+    grid-area: 2 / 1 / -1 / 2;
+}
+
+.section-5 {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    grid-area: 2 / 2 / -1 / -2;
+}
+
+.section-5 .top .profile-picture {
+    border-radius: 100%;
+    border-style: solid;
+    border-color: hsl(263, 55%, 52%); 
+ }
